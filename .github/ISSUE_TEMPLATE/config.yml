@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private support and security
+    url: https://kickoff-manager-dfdea.web.app/html/support.html
+    about: Use the official Support page for account, privacy, security, or other sensitive matters.
+  - name: Open KickOff Manager
+    url: https://kickoff-manager-dfdea.web.app
+    about: Visit the live KickOff Manager public beta.
