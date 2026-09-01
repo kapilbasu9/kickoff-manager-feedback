@@ -1,0 +1,67 @@
+name: Feature request
+description: Suggest an improvement or new capability for KickOff Manager.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping shape KickOff Manager. Describe the user problem first, then propose a solution.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Feature area
+      options:
+        - Tournament formats
+        - Tournament Builder
+        - Teams
+        - Fixtures
+        - Standings
+        - Knockout
+        - Statistics
+        - Dashboard
+        - Tournament Center
+        - Sharing or exports
+        - Authentication or cloud synchronization
+        - Accessibility or responsive design
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What limitation or difficulty does the feature address?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Explain the behaviour you would like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Who benefits?
+      description: Describe the organizers, visitors, tournament types, or workflows that would benefit.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Mention any workaround or alternative design you considered.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I checked for an existing request covering the same idea.
+          required: true
+        - label: This request does not include private account or tournament information.
+          required: true
