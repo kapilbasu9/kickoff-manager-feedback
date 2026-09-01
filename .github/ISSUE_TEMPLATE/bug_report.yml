@@ -1,0 +1,83 @@
+name: Bug report
+description: Report a reproducible problem in the KickOff Manager public beta.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve KickOff Manager. Do not include passwords, access tokens, private email addresses, Firebase credentials, or sensitive tournament information.
+
+  - type: dropdown
+    id: page
+    attributes:
+      label: Affected area
+      options:
+        - Home
+        - Tournament Builder
+        - Tournament Center
+        - Dashboard
+        - Teams
+        - Fixtures
+        - Standings
+        - Knockout
+        - Statistics
+        - Settings
+        - Authentication or cloud synchronization
+        - Privacy, Support, or 404 page
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: Clearly describe what went wrong.
+      placeholder: Describe the problem without including private information.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest sequence that consistently reproduces the problem.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Enter...
+        4. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser and device
+      placeholder: "Example: Chrome 152, Windows 11, desktop or mobile width"
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or additional context
+      description: Remove names, email addresses, owner information, tokens, and sensitive tournament data before attaching anything.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I checked for an existing issue describing the same problem.
+          required: true
+        - label: I removed personal, credential, and sensitive tournament information.
+          required: true
